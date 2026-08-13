@@ -1,29 +1,12 @@
 # AutoHedge
 
-**AutoHedge** is an AI-powered market and portfolio risk assistant with a polished fintech dashboard. It monitors the **whole market** (equities, rates, commodities, defensives, and crypto), produces live tips/suggestions, analyzes multi-asset portfolios, and generates explainable hedge recommendations.
-
-This repository is an independent personal project by [tah-rak](https://github.com/tah-rak). It runs on **free resources only**.
-
-> Educational analysis tool. Not investment advice.
-
----
-
-## Why it matters
-
-Manual risk reviews are slow and often opaque. AutoHedge helps by:
-
-1. Tracking a whole-market board (equities, tech, bonds/rates, gold, international, crypto, and more)
-2. Generating cross-asset suggestions and tips — not a crypto-only narrative
-3. Running portfolio stress scenarios with clear risk scores and factor exposures
-4. Producing hedge recommendations with rationale tied to market and portfolio signals
-
----
+**AutoHedge** is an AI-powered market and portfolio risk assistant with a polished fintech dashboard. It monitors the equities, rates, commodities, defensives, and crypto and generates explainable hedge recommendations.
 
 ## What you get in the product UI
 
 A clean, mobile-friendly dashboard inspired by simple modern investing apps (usability only — **not** a copy of any broker’s branding):
 
-- **Market Insights** (whole-market regime + sleeve board)
+- **Market Insights** 
 - **Suggestions & Tips** across equities, rates, commodities, defensives, and crypto
 - Portfolio Risk Analysis
 - Risk Score
@@ -36,21 +19,6 @@ A clean, mobile-friendly dashboard inspired by simple modern investing apps (usa
 - Recommendation Rationale
 - Clean versioning for portfolios, simulations, and analysis runs
 
-The UI intentionally avoids internal/prototype labels (no “backend connected”, engine status badges, or developer jargon).
-
----
-
-## Data: where it comes from (and how real-time it is)
-
-| Question | Answer |
-|---|---|
-| Market Insights board | **Near-real-time public quotes** via free Yahoo Finance (`yfinance`) when available |
-| If live fetch fails | Automatic **simulated market tape** fallback |
-| Portfolio stress scenarios | Local **simulation** (reproducible) |
-| API keys required? | **No** |
-| Coverage | Equities, tech, international, bonds/rates, gold, real estate, utilities, and crypto |
-
-Crypto is one sleeve in the full market board — not the whole product.
 
 Details: [docs/DATA.md](docs/DATA.md)
 
