@@ -196,7 +196,7 @@ Each card shows confidence, expected effect, triggers, and rationale.
 
 ---
 
-## Docker (optional)
+## Docker
 
 ```bash
 docker compose up --build
