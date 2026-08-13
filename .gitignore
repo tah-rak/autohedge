@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.pkl
+!models/.gitkeep
+
+# OCaml / Dune
+_build/
+*.install
+.merlin
+*.cmo
+*.cmi
+*.cmx
+*.o
+*.a
+*.so
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+*.log
+
+# Local outputs (keep samples)
+outputs/*
+!outputs/samples/
+!outputs/samples/**
+!outputs/.gitkeep
+
+# Frontend
+web/node_modules/
+
+# Data caches
+data/market/generated/
+*.parquet
+
+# AWS local creds
+.aws/
+credentials
+
+# Docker
+docker-compose.override.yml
+
+# Cursor / AI tooling metadata (keep repo personal)
+.cursor/
+.emergent/
+*.canvas.tsx

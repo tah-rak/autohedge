@@ -1,0 +1,34 @@
+name: Defensive Income
+description: Lower-volatility posture with bonds, utilities, gold, and a small crypto sleeve.
+version: "1.1"
+currency: USD
+cash_weight: 0.10
+holdings:
+  - symbol: AGG
+    asset_class: bond
+    sector: fixed_income
+    weight: 0.28
+  - symbol: TLT
+    asset_class: bond
+    sector: rates
+    weight: 0.14
+  - symbol: XLU
+    asset_class: etf
+    sector: utilities
+    weight: 0.14
+  - symbol: VYM
+    asset_class: etf
+    sector: dividend
+    weight: 0.12
+  - symbol: GLD
+    asset_class: commodity
+    sector: precious_metals
+    weight: 0.10
+  - symbol: SPY
+    asset_class: etf
+    sector: broad_market
+    weight: 0.06
+  - symbol: BTC
+    asset_class: crypto
+    sector: crypto
+    weight: 0.06

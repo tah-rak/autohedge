@@ -1,0 +1,883 @@
+{
+  "product": "AutoHedge",
+  "title": "Portfolio Risk Analysis",
+  "run": {
+    "id": "SIM-42-RIS",
+    "generatedAt": "2026-08-12T23:50:49.992463+00:00",
+    "portfolioId": "balanced",
+    "portfolioName": "Balanced Multi-Asset",
+    "portfolioVersion": "1.1",
+    "simulationVersion": "scenario:risk_off",
+    "scenario": "risk_off",
+    "scenarioLabel": "Risk-Off Stress",
+    "seed": 42
+  },
+  "summary": {
+    "riskScore": {
+      "label": "High",
+      "value": 0.6666666666666666,
+      "display": "67"
+    },
+    "totalReturn": -0.5377894317355266,
+    "totalReturnLabel": "-53.8%",
+    "volatility": 0.37373830406882785,
+    "volatilityLabel": "37.4%",
+    "maxDrawdown": 0.5663686932613353,
+    "maxDrawdownLabel": "56.6%",
+    "var95": 0.041813689880608886,
+    "var95Label": "4.18%"
+  },
+  "riskAnalysis": {
+    "metrics": [
+      {
+        "label": "Volatility",
+        "value": "37.4%"
+      },
+      {
+        "label": "Value at Risk (95%)",
+        "value": "4.18%"
+      },
+      {
+        "label": "Expected Shortfall",
+        "value": "5.06%"
+      },
+      {
+        "label": "Max Drawdown",
+        "value": "56.6%"
+      },
+      {
+        "label": "Market Sensitivity",
+        "value": "1.23"
+      },
+      {
+        "label": "Avg Correlation",
+        "value": "0.40"
+      },
+      {
+        "label": "Top Position",
+        "value": "24.0%"
+      },
+      {
+        "label": "Concentration (HHI)",
+        "value": "0.130"
+      }
+    ]
+  },
+  "volatilityTrends": {
+    "regime": "Normal",
+    "ewma": 0.3246696547103109,
+    "forecast": 0.20030916602604937,
+    "ewmaLabel": "32.5%",
+    "forecastLabel": "20.0%",
+    "series": [
+      {
+        "date": "2025-09-24",
+        "value": 0.30817865000439354
+      },
+      {
+        "date": "2025-09-29",
+        "value": 0.33324233777232304
+      },
+      {
+        "date": "2025-10-02",
+        "value": 0.3744977059588982
+      },
+      {
+        "date": "2025-10-07",
+        "value": 0.3721045371266066
+      },
+      {
+        "date": "2025-10-10",
+        "value": 0.37535102105132595
+      },
+      {
+        "date": "2025-10-15",
+        "value": 0.3867592002811596
+      },
+      {
+        "date": "2025-10-20",
+        "value": 0.37384073009042007
+      },
+      {
+        "date": "2025-10-23",
+        "value": 0.359629838614077
+      },
+      {
+        "date": "2025-10-28",
+        "value": 0.3418186653129902
+      },
+      {
+        "date": "2025-10-31",
+        "value": 0.32065585190813894
+      },
+      {
+        "date": "2025-11-05",
+        "value": 0.3202495537223416
+      },
+      {
+        "date": "2025-11-10",
+        "value": 0.3177261531138097
+      },
+      {
+        "date": "2025-11-13",
+        "value": 0.3451519544206326
+      },
+      {
+        "date": "2025-11-18",
+        "value": 0.3844910043024929
+      },
+      {
+        "date": "2025-11-21",
+        "value": 0.37084198497766246
+      },
+      {
+        "date": "2025-11-26",
+        "value": 0.40739908862703955
+      },
+      {
+        "date": "2025-12-01",
+        "value": 0.3953927586183919
+      },
+      {
+        "date": "2025-12-04",
+        "value": 0.4183395623186421
+      },
+      {
+        "date": "2025-12-09",
+        "value": 0.4511606553825229
+      },
+      {
+        "date": "2025-12-12",
+        "value": 0.4571647648099277
+      },
+      {
+        "date": "2025-12-17",
+        "value": 0.40618263936677607
+      },
+      {
+        "date": "2025-12-22",
+        "value": 0.41511569844036056
+      },
+      {
+        "date": "2025-12-25",
+        "value": 0.3843930784492556
+      },
+      {
+        "date": "2025-12-30",
+        "value": 0.3792177968552697
+      },
+      {
+        "date": "2026-01-02",
+        "value": 0.3755785101597564
+      },
+      {
+        "date": "2026-01-07",
+        "value": 0.4149863157414097
+      },
+      {
+        "date": "2026-01-12",
+        "value": 0.41577061471572535
+      },
+      {
+        "date": "2026-01-15",
+        "value": 0.42167198656773913
+      },
+      {
+        "date": "2026-01-20",
+        "value": 0.4090245034711117
+      },
+      {
+        "date": "2026-01-23",
+        "value": 0.39247116313739133
+      },
+      {
+        "date": "2026-01-28",
+        "value": 0.43066675707700186
+      },
+      {
+        "date": "2026-02-02",
+        "value": 0.4179889700684091
+      },
+      {
+        "date": "2026-02-05",
+        "value": 0.39054256231463275
+      },
+      {
+        "date": "2026-02-10",
+        "value": 0.35047892952834464
+      },
+      {
+        "date": "2026-02-13",
+        "value": 0.36692507730759527
+      },
+      {
+        "date": "2026-02-18",
+        "value": 0.3575297727588105
+      },
+      {
+        "date": "2026-02-23",
+        "value": 0.3588943488514014
+      },
+      {
+        "date": "2026-02-26",
+        "value": 0.3635505050248317
+      },
+      {
+        "date": "2026-03-03",
+        "value": 0.3832033757868737
+      },
+      {
+        "date": "2026-03-06",
+        "value": 0.34561042567317074
+      },
+      {
+        "date": "2026-03-11",
+        "value": 0.37494980351493934
+      },
+      {
+        "date": "2026-03-16",
+        "value": 0.3921937690538395
+      },
+      {
+        "date": "2026-03-19",
+        "value": 0.4399886666164392
+      },
+      {
+        "date": "2026-03-24",
+        "value": 0.4567047757196534
+      },
+      {
+        "date": "2026-03-27",
+        "value": 0.4223738473605248
+      },
+      {
+        "date": "2026-04-01",
+        "value": 0.38821640010207
+      },
+      {
+        "date": "2026-04-06",
+        "value": 0.4366511044325974
+      },
+      {
+        "date": "2026-04-09",
+        "value": 0.4405490469270055
+      },
+      {
+        "date": "2026-04-14",
+        "value": 0.4759062897577407
+      },
+      {
+        "date": "2026-04-17",
+        "value": 0.43051777542005515
+      },
+      {
+        "date": "2026-04-22",
+        "value": 0.48622758897431106
+      },
+      {
+        "date": "2026-04-27",
+        "value": 0.48565215980643905
+      },
+      {
+        "date": "2026-04-30",
+        "value": 0.4769401989501969
+      },
+      {
+        "date": "2026-05-05",
+        "value": 0.4295622102369882
+      },
+      {
+        "date": "2026-05-08",
+        "value": 0.3969300984821766
+      },
+      {
+        "date": "2026-05-13",
+        "value": 0.33295024140164936
+      },
+      {
+        "date": "2026-05-18",
+        "value": 0.3658639821173978
+      },
+      {
+        "date": "2026-05-21",
+        "value": 0.29181489494103946
+      },
+      {
+        "date": "2026-05-26",
+        "value": 0.31917842233780125
+      },
+      {
+        "date": "2026-05-29",
+        "value": 0.3888910854675518
+      },
+      {
+        "date": "2026-06-03",
+        "value": 0.3758838669193446
+      },
+      {
+        "date": "2026-06-08",
+        "value": 0.385007804637146
+      },
+      {
+        "date": "2026-06-11",
+        "value": 0.4237432099484432
+      },
+      {
+        "date": "2026-06-16",
+        "value": 0.4047303021023442
+      },
+      {
+        "date": "2026-06-19",
+        "value": 0.3956110750293041
+      },
+      {
+        "date": "2026-06-24",
+        "value": 0.38427686271900735
+      },
+      {
+        "date": "2026-06-29",
+        "value": 0.2972442456137109
+      },
+      {
+        "date": "2026-07-02",
+        "value": 0.30112380603392036
+      },
+      {
+        "date": "2026-07-07",
+        "value": 0.30069970229882864
+      },
+      {
+        "date": "2026-07-10",
+        "value": 0.30788326199582094
+      },
+      {
+        "date": "2026-07-15",
+        "value": 0.3417346093393954
+      },
+      {
+        "date": "2026-07-20",
+        "value": 0.3434804370563306
+      },
+      {
+        "date": "2026-07-23",
+        "value": 0.34046673427906454
+      },
+      {
+        "date": "2026-07-28",
+        "value": 0.3772540552286333
+      },
+      {
+        "date": "2026-07-31",
+        "value": 0.3870815944340664
+      },
+      {
+        "date": "2026-08-05",
+        "value": 0.3662460346632542
+      },
+      {
+        "date": "2026-08-10",
+        "value": 0.3449663137651605
+      },
+      {
+        "date": "2026-08-12",
+        "value": 0.2970692385361176
+      }
+    ]
+  },
+  "marketSignalInsights": [
+    {
+      "id": "HIGH_VOLATILITY",
+      "title": "Elevated Volatility",
+      "severity": "high",
+      "summary": "Annualized volatility 37.4% exceeds alert threshold."
+    },
+    {
+      "id": "DEEP_DRAWDOWN",
+      "title": "Deep Drawdown",
+      "severity": "high",
+      "summary": "Max drawdown 56.6% indicates material path risk."
+    }
+  ],
+  "exposureBreakdown": {
+    "byAssetClass": [
+      {
+        "label": "Equities & ETFs",
+        "value": 0.47
+      },
+      {
+        "label": "Crypto",
+        "value": 0.15000000000000002
+      },
+      {
+        "label": "Cash",
+        "value": 0.06
+      },
+      {
+        "label": "Other",
+        "value": 0.32
+      }
+    ],
+    "holdings": [
+      {
+        "symbol": "SPY",
+        "name": "S&P 500 ETF",
+        "assetClass": "ETF",
+        "sector": "Broad Market",
+        "weight": 0.24,
+        "weightLabel": "24.0%"
+      },
+      {
+        "symbol": "EFA",
+        "name": "Developed Markets ETF",
+        "assetClass": "ETF",
+        "sector": "International",
+        "weight": 0.1,
+        "weightLabel": "10.0%"
+      },
+      {
+        "symbol": "EEM",
+        "name": "Emerging Markets ETF",
+        "assetClass": "ETF",
+        "sector": "Emerging",
+        "weight": 0.07,
+        "weightLabel": "7.0%"
+      },
+      {
+        "symbol": "AGG",
+        "name": "US Aggregate Bond ETF",
+        "assetClass": "Bond",
+        "sector": "Fixed Income",
+        "weight": 0.18,
+        "weightLabel": "18.0%"
+      },
+      {
+        "symbol": "TLT",
+        "name": "Long-Term Treasury ETF",
+        "assetClass": "Bond",
+        "sector": "Rates",
+        "weight": 0.07,
+        "weightLabel": "7.0%"
+      },
+      {
+        "symbol": "GLD",
+        "name": "Gold Trust",
+        "assetClass": "Commodity",
+        "sector": "Precious Metals",
+        "weight": 0.07,
+        "weightLabel": "7.0%"
+      },
+      {
+        "symbol": "VNQ",
+        "name": "Real Estate ETF",
+        "assetClass": "ETF",
+        "sector": "Real Estate",
+        "weight": 0.06,
+        "weightLabel": "6.0%"
+      },
+      {
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "assetClass": "Crypto",
+        "sector": "Crypto",
+        "weight": 0.08,
+        "weightLabel": "8.0%"
+      },
+      {
+        "symbol": "ETH",
+        "name": "Ethereum",
+        "assetClass": "Crypto",
+        "sector": "Crypto",
+        "weight": 0.07,
+        "weightLabel": "7.0%"
+      }
+    ]
+  },
+  "hedgeRecommendations": [
+    {
+      "title": "Increase Cash Buffer",
+      "instrument": "CASH",
+      "confidence": 0.7999999999999999,
+      "confidenceLabel": "80%",
+      "expectedEffect": "Lower equity exposure by ~5% and dampen drawdowns.",
+      "rationale": "Raise cash to reduce beta and absorb volatility while risk remains elevated.",
+      "triggers": [
+        "Deep Drawdown",
+        "Elevated Volatility"
+      ],
+      "narrative": "Recommend `increase_cash` via `CASH` because Raise cash to reduce beta and absorb volatility while risk remains elevated. Triggered by: DEEP_DRAWDOWN, HIGH_VOLATILITY. Portfolio risk label is high with vol=37.4% and max drawdown=56.6%."
+    },
+    {
+      "title": "Add Market Hedge",
+      "instrument": "SH",
+      "confidence": 0.72,
+      "confidenceLabel": "72%",
+      "expectedEffect": "Partial market-beta offset without liquidating core holdings.",
+      "rationale": "Simulated short-equity hedge (SH) offsets broad market beta during risk-off tapes.",
+      "triggers": [
+        "Risk-Off Market Tape"
+      ],
+      "narrative": "Recommend `add_inverse_etf_hedge` via `SH` because Simulated short-equity hedge (SH) offsets broad market beta during risk-off tapes. Triggered by: RISK_OFF_TAPE. Portfolio risk label is high with vol=37.4% and max drawdown=56.6%."
+    },
+    {
+      "title": "Protective Overlay (Simulated)",
+      "instrument": "SPY_PUT_OVERLAY",
+      "confidence": 0.66,
+      "confidenceLabel": "66%",
+      "expectedEffect": "Bound downside beyond strike in exchange for premium drag.",
+      "rationale": "A simulated protective-put overlay caps left-tail loss if the market continues to sell off (options-style hedge for analysis only).",
+      "triggers": [
+        "Deep Drawdown",
+        "Elevated Volatility"
+      ],
+      "narrative": "Recommend `simulate_put_overlay` via `SPY_PUT_OVERLAY` because A simulated protective-put overlay caps left-tail loss if the market continues to sell off (options-style hedge for analysis only). Triggered by: DEEP_DRAWDOWN, HIGH_VOLATILITY. Portfolio risk label is high with vol=37.4% and max drawdown=56.6%."
+    }
+  ],
+  "scenarioSimulation": {
+    "label": "Risk-Off Stress",
+    "description": "Broad selloff with rising correlations and defensive flows.",
+    "wealthSeries": [
+      {
+        "date": "2025-08-27",
+        "value": 0.9940232896216032
+      },
+      {
+        "date": "2025-09-01",
+        "value": 1.0033393843597462
+      },
+      {
+        "date": "2025-09-04",
+        "value": 1.0093052480820723
+      },
+      {
+        "date": "2025-09-09",
+        "value": 0.9774516005254519
+      },
+      {
+        "date": "2025-09-12",
+        "value": 0.9784494309375346
+      },
+      {
+        "date": "2025-09-17",
+        "value": 0.9452860779435551
+      },
+      {
+        "date": "2025-09-22",
+        "value": 0.9737670413156472
+      },
+      {
+        "date": "2025-09-25",
+        "value": 1.0328211234919196
+      },
+      {
+        "date": "2025-09-30",
+        "value": 1.0447776609830568
+      },
+      {
+        "date": "2025-10-03",
+        "value": 0.9999571576133127
+      },
+      {
+        "date": "2025-10-08",
+        "value": 0.9732039212707531
+      },
+      {
+        "date": "2025-10-13",
+        "value": 0.9584924485494781
+      },
+      {
+        "date": "2025-10-16",
+        "value": 0.9536186531938864
+      },
+      {
+        "date": "2025-10-21",
+        "value": 0.9835193585607895
+      },
+      {
+        "date": "2025-10-24",
+        "value": 1.0386156316223092
+      },
+      {
+        "date": "2025-10-29",
+        "value": 1.0474664163383043
+      },
+      {
+        "date": "2025-11-03",
+        "value": 1.0103020448846836
+      },
+      {
+        "date": "2025-11-06",
+        "value": 1.0316962208242466
+      },
+      {
+        "date": "2025-11-11",
+        "value": 1.0120307855875417
+      },
+      {
+        "date": "2025-11-14",
+        "value": 1.006440749689941
+      },
+      {
+        "date": "2025-11-19",
+        "value": 0.9556984845280804
+      },
+      {
+        "date": "2025-11-24",
+        "value": 0.9439576454083417
+      },
+      {
+        "date": "2025-11-27",
+        "value": 0.9222331964279993
+      },
+      {
+        "date": "2025-12-02",
+        "value": 0.9319307799069939
+      },
+      {
+        "date": "2025-12-05",
+        "value": 0.955413645488876
+      },
+      {
+        "date": "2025-12-10",
+        "value": 0.9422563601855212
+      },
+      {
+        "date": "2025-12-15",
+        "value": 0.8804022817853677
+      },
+      {
+        "date": "2025-12-18",
+        "value": 0.8266075600755913
+      },
+      {
+        "date": "2025-12-23",
+        "value": 0.8067914260690581
+      },
+      {
+        "date": "2025-12-26",
+        "value": 0.8157561610708574
+      },
+      {
+        "date": "2025-12-31",
+        "value": 0.7765433453232768
+      },
+      {
+        "date": "2026-01-05",
+        "value": 0.862837493178969
+      },
+      {
+        "date": "2026-01-08",
+        "value": 0.8214478115745335
+      },
+      {
+        "date": "2026-01-13",
+        "value": 0.7702170164272437
+      },
+      {
+        "date": "2026-01-16",
+        "value": 0.778268133865817
+      },
+      {
+        "date": "2026-01-21",
+        "value": 0.7513346985217835
+      },
+      {
+        "date": "2026-01-26",
+        "value": 0.721833773014273
+      },
+      {
+        "date": "2026-01-29",
+        "value": 0.7640458720594482
+      },
+      {
+        "date": "2026-02-03",
+        "value": 0.7317227894530578
+      },
+      {
+        "date": "2026-02-06",
+        "value": 0.74276663983872
+      },
+      {
+        "date": "2026-02-11",
+        "value": 0.7180277145060752
+      },
+      {
+        "date": "2026-02-16",
+        "value": 0.755313339680779
+      },
+      {
+        "date": "2026-02-19",
+        "value": 0.7591889549648656
+      },
+      {
+        "date": "2026-02-24",
+        "value": 0.7123668886185397
+      },
+      {
+        "date": "2026-02-27",
+        "value": 0.7214984403212836
+      },
+      {
+        "date": "2026-03-04",
+        "value": 0.6679419573372856
+      },
+      {
+        "date": "2026-03-09",
+        "value": 0.7121178103267563
+      },
+      {
+        "date": "2026-03-12",
+        "value": 0.7598309788837672
+      },
+      {
+        "date": "2026-03-17",
+        "value": 0.6990094095184971
+      },
+      {
+        "date": "2026-03-20",
+        "value": 0.7153430387797449
+      },
+      {
+        "date": "2026-03-25",
+        "value": 0.7082712032631393
+      },
+      {
+        "date": "2026-03-30",
+        "value": 0.7422119740872873
+      },
+      {
+        "date": "2026-04-02",
+        "value": 0.7961396924357702
+      },
+      {
+        "date": "2026-04-07",
+        "value": 0.7689786161402994
+      },
+      {
+        "date": "2026-04-10",
+        "value": 0.7558239576754685
+      },
+      {
+        "date": "2026-04-15",
+        "value": 0.7464112344049741
+      },
+      {
+        "date": "2026-04-20",
+        "value": 0.6939276616509686
+      },
+      {
+        "date": "2026-04-23",
+        "value": 0.7199523464500277
+      },
+      {
+        "date": "2026-04-28",
+        "value": 0.7032062263417842
+      },
+      {
+        "date": "2026-05-01",
+        "value": 0.674816244993349
+      },
+      {
+        "date": "2026-05-06",
+        "value": 0.6829161394406461
+      },
+      {
+        "date": "2026-05-11",
+        "value": 0.6837441724058912
+      },
+      {
+        "date": "2026-05-14",
+        "value": 0.6742900085392979
+      },
+      {
+        "date": "2026-05-19",
+        "value": 0.6141666100168577
+      },
+      {
+        "date": "2026-05-22",
+        "value": 0.5892192679498318
+      },
+      {
+        "date": "2026-05-27",
+        "value": 0.5818262847843015
+      },
+      {
+        "date": "2026-06-01",
+        "value": 0.5776938348477951
+      },
+      {
+        "date": "2026-06-04",
+        "value": 0.5678770036877738
+      },
+      {
+        "date": "2026-06-09",
+        "value": 0.557626056063387
+      },
+      {
+        "date": "2026-06-12",
+        "value": 0.5550008401998363
+      },
+      {
+        "date": "2026-06-17",
+        "value": 0.5524004210058155
+      },
+      {
+        "date": "2026-06-22",
+        "value": 0.5379800031121227
+      },
+      {
+        "date": "2026-06-25",
+        "value": 0.522628841677168
+      },
+      {
+        "date": "2026-06-30",
+        "value": 0.5187256735980026
+      },
+      {
+        "date": "2026-07-03",
+        "value": 0.5085563944926187
+      },
+      {
+        "date": "2026-07-08",
+        "value": 0.49129591402672207
+      },
+      {
+        "date": "2026-07-13",
+        "value": 0.5132553479641899
+      },
+      {
+        "date": "2026-07-16",
+        "value": 0.48904285188192637
+      },
+      {
+        "date": "2026-07-21",
+        "value": 0.48461216417254027
+      },
+      {
+        "date": "2026-07-24",
+        "value": 0.5210871656833076
+      },
+      {
+        "date": "2026-07-29",
+        "value": 0.5057006918056919
+      },
+      {
+        "date": "2026-08-03",
+        "value": 0.5160666941846671
+      },
+      {
+        "date": "2026-08-06",
+        "value": 0.49630278007565043
+      },
+      {
+        "date": "2026-08-11",
+        "value": 0.4636124442618845
+      },
+      {
+        "date": "2026-08-12",
+        "value": 0.45944806956412243
+      }
+    ],
+    "endingWealth": 0.45944806956412243
+  },
+  "disclaimer": "Simulated analysis for research and education. Not investment advice."
+}

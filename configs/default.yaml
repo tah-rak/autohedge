@@ -1,0 +1,53 @@
+# AutoHedge default configuration (free / local-first)
+
+simulation:
+  seed: 42
+  trading_days: 252
+  lookback_days: 60
+  annualization_factor: 252
+
+risk:
+  var_confidence: 0.95
+  max_drawdown_alert: 0.12
+  volatility_alert: 0.25
+  concentration_alert: 0.35
+  correlation_alert: 0.75
+  beta_alert: 1.30
+  crypto_factor_alert: 0.35
+  crypto_factor_contrib_alert: 0.22
+
+ml:
+  model_dir: models
+  retrain_on_run: false
+  n_estimators: 100
+  random_state: 42
+
+agents:
+  min_confidence: 0.55
+  max_recommendations: 5
+
+market:
+  # Prefer free near-real-time public quotes (yfinance / Yahoo Finance). No API key.
+  # If live fetch fails, AutoHedge falls back to a simulated market tape automatically.
+  prefer_live: true
+  refresh_seconds: 60
+
+ocaml:
+  # Path to compiled OCaml risk CLI (optional). If missing, Python risk engine is used.
+  binary: ocaml/_build/default/bin/main.exe
+  prefer_ocaml: true
+
+aws:
+  enabled: false
+  region: us-east-1
+  # REQUIRED only when aws.enabled=true: AWS credentials via env or ~/.aws
+  # Free alternative: keep aws.enabled=false and write outputs to ./outputs
+  s3_bucket: ""
+  s3_prefix: autohedge/simulations
+
+logging:
+  level: INFO
+  file: outputs/autohedge.log
+
+output:
+  dir: outputs

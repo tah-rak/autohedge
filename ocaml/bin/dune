@@ -1,0 +1,5 @@
+(executable
+ (name main)
+ (public_name autohedge-risk)
+ (libraries autohedge_lib cmdliner yojson)
+ (modules main))

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autohedge"
+version = "1.0.0"
+description = "AI-powered portfolio risk analysis assistant with OCaml risk engine and agent workflows"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "tah-rak" }]
+keywords = ["portfolio", "risk", "hedge", "fintech", "ml", "ocaml"]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "scikit-learn>=1.3",
+  "scipy>=1.11",
+  "PyYAML>=6.0",
+  "joblib>=1.3",
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.27",
+  "yfinance>=0.2.40",
+]
+
+[project.optional-dependencies]
+aws = ["boto3>=1.28"]
+dev = ["pytest>=7.4", "ruff>=0.1"]
+
+[project.scripts]
+autohedge = "autohedge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

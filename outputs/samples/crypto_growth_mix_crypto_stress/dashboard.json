@@ -1,0 +1,921 @@
+{
+  "product": "AutoHedge",
+  "title": "Portfolio Risk Analysis",
+  "run": {
+    "id": "SIM-42-CRY",
+    "generatedAt": "2026-08-12T23:50:50.486356+00:00",
+    "portfolioId": "crypto_growth",
+    "portfolioName": "Crypto Growth Mix",
+    "portfolioVersion": "1.0",
+    "simulationVersion": "scenario:crypto_stress",
+    "scenario": "crypto_stress",
+    "scenarioLabel": "Crypto Stress",
+    "seed": 42
+  },
+  "summary": {
+    "riskScore": {
+      "label": "Severe",
+      "value": 1.0,
+      "display": "100"
+    },
+    "totalReturn": -0.9296682965500048,
+    "totalReturnLabel": "-93.0%",
+    "volatility": 0.8913305407231285,
+    "volatilityLabel": "89.1%",
+    "maxDrawdown": 0.938570650266884,
+    "maxDrawdownLabel": "93.9%",
+    "var95": 0.10135895419454816,
+    "var95Label": "10.14%"
+  },
+  "riskAnalysis": {
+    "metrics": [
+      {
+        "label": "Volatility",
+        "value": "89.1%"
+      },
+      {
+        "label": "Value at Risk (95%)",
+        "value": "10.14%"
+      },
+      {
+        "label": "Expected Shortfall",
+        "value": "12.64%"
+      },
+      {
+        "label": "Max Drawdown",
+        "value": "93.9%"
+      },
+      {
+        "label": "Market Sensitivity",
+        "value": "3.38"
+      },
+      {
+        "label": "Avg Correlation",
+        "value": "0.44"
+      },
+      {
+        "label": "Top Position",
+        "value": "22.0%"
+      },
+      {
+        "label": "Concentration (HHI)",
+        "value": "0.132"
+      }
+    ]
+  },
+  "volatilityTrends": {
+    "regime": "Elevated",
+    "ewma": 0.8399051008765738,
+    "forecast": 0.45173609338904075,
+    "ewmaLabel": "84.0%",
+    "forecastLabel": "45.2%",
+    "series": [
+      {
+        "date": "2025-09-24",
+        "value": 0.7066921972531002
+      },
+      {
+        "date": "2025-09-29",
+        "value": 0.8230927311980323
+      },
+      {
+        "date": "2025-10-02",
+        "value": 0.8275246905114352
+      },
+      {
+        "date": "2025-10-07",
+        "value": 0.829530451659674
+      },
+      {
+        "date": "2025-10-10",
+        "value": 0.9568884215117593
+      },
+      {
+        "date": "2025-10-15",
+        "value": 0.8997725412590516
+      },
+      {
+        "date": "2025-10-20",
+        "value": 0.9116200344691548
+      },
+      {
+        "date": "2025-10-23",
+        "value": 0.8417627590421422
+      },
+      {
+        "date": "2025-10-28",
+        "value": 0.8161221420695071
+      },
+      {
+        "date": "2025-10-31",
+        "value": 0.8827947006528498
+      },
+      {
+        "date": "2025-11-05",
+        "value": 0.9868143141304928
+      },
+      {
+        "date": "2025-11-10",
+        "value": 0.8888525369831044
+      },
+      {
+        "date": "2025-11-13",
+        "value": 0.9355241019589592
+      },
+      {
+        "date": "2025-11-18",
+        "value": 0.8835659523454452
+      },
+      {
+        "date": "2025-11-21",
+        "value": 1.0464743507679723
+      },
+      {
+        "date": "2025-11-26",
+        "value": 1.030301712639373
+      },
+      {
+        "date": "2025-12-01",
+        "value": 1.0052979320666267
+      },
+      {
+        "date": "2025-12-04",
+        "value": 0.9879089658493823
+      },
+      {
+        "date": "2025-12-09",
+        "value": 1.0004751036718498
+      },
+      {
+        "date": "2025-12-12",
+        "value": 1.0153294003341449
+      },
+      {
+        "date": "2025-12-17",
+        "value": 1.0150121596621988
+      },
+      {
+        "date": "2025-12-22",
+        "value": 0.782370020913885
+      },
+      {
+        "date": "2025-12-25",
+        "value": 0.9381466050508739
+      },
+      {
+        "date": "2025-12-30",
+        "value": 0.9540783562946431
+      },
+      {
+        "date": "2026-01-02",
+        "value": 0.9415278501504687
+      },
+      {
+        "date": "2026-01-07",
+        "value": 0.9009440968669705
+      },
+      {
+        "date": "2026-01-12",
+        "value": 0.8553982866347513
+      },
+      {
+        "date": "2026-01-15",
+        "value": 0.8370362366366813
+      },
+      {
+        "date": "2026-01-20",
+        "value": 1.0167335692643453
+      },
+      {
+        "date": "2026-01-23",
+        "value": 0.8665027093038379
+      },
+      {
+        "date": "2026-01-28",
+        "value": 1.0095904620295082
+      },
+      {
+        "date": "2026-02-02",
+        "value": 0.9700660075882372
+      },
+      {
+        "date": "2026-02-05",
+        "value": 0.9125928842819346
+      },
+      {
+        "date": "2026-02-10",
+        "value": 0.9712125782566291
+      },
+      {
+        "date": "2026-02-13",
+        "value": 1.00933147724638
+      },
+      {
+        "date": "2026-02-18",
+        "value": 0.9175551482678639
+      },
+      {
+        "date": "2026-02-23",
+        "value": 1.0218990417607456
+      },
+      {
+        "date": "2026-02-26",
+        "value": 0.8572777293982768
+      },
+      {
+        "date": "2026-03-03",
+        "value": 0.8576421177163434
+      },
+      {
+        "date": "2026-03-06",
+        "value": 0.9213352555075939
+      },
+      {
+        "date": "2026-03-11",
+        "value": 0.9229947247246221
+      },
+      {
+        "date": "2026-03-16",
+        "value": 0.8812047069947876
+      },
+      {
+        "date": "2026-03-19",
+        "value": 0.7620796983846507
+      },
+      {
+        "date": "2026-03-24",
+        "value": 0.6849428273462533
+      },
+      {
+        "date": "2026-03-27",
+        "value": 0.9498697492916574
+      },
+      {
+        "date": "2026-04-01",
+        "value": 0.9959807118893667
+      },
+      {
+        "date": "2026-04-06",
+        "value": 0.9129894706271405
+      },
+      {
+        "date": "2026-04-09",
+        "value": 1.059460567907928
+      },
+      {
+        "date": "2026-04-14",
+        "value": 1.0687925921513215
+      },
+      {
+        "date": "2026-04-17",
+        "value": 1.066102934478653
+      },
+      {
+        "date": "2026-04-22",
+        "value": 1.0881418394795452
+      },
+      {
+        "date": "2026-04-27",
+        "value": 0.9131658740371811
+      },
+      {
+        "date": "2026-04-30",
+        "value": 1.0179632402949554
+      },
+      {
+        "date": "2026-05-05",
+        "value": 1.0398230841572782
+      },
+      {
+        "date": "2026-05-08",
+        "value": 1.0126764882246995
+      },
+      {
+        "date": "2026-05-13",
+        "value": 0.9781346086605949
+      },
+      {
+        "date": "2026-05-18",
+        "value": 0.962625717187547
+      },
+      {
+        "date": "2026-05-21",
+        "value": 1.0612559726157507
+      },
+      {
+        "date": "2026-05-26",
+        "value": 1.0353681032055992
+      },
+      {
+        "date": "2026-05-29",
+        "value": 0.8867289003883163
+      },
+      {
+        "date": "2026-06-03",
+        "value": 0.8514902650706757
+      },
+      {
+        "date": "2026-06-08",
+        "value": 0.8409811665012746
+      },
+      {
+        "date": "2026-06-11",
+        "value": 0.8748605636926899
+      },
+      {
+        "date": "2026-06-16",
+        "value": 0.9590696485269964
+      },
+      {
+        "date": "2026-06-19",
+        "value": 0.8170784460715762
+      },
+      {
+        "date": "2026-06-24",
+        "value": 0.7792066510731384
+      },
+      {
+        "date": "2026-06-29",
+        "value": 0.8338317616017277
+      },
+      {
+        "date": "2026-07-02",
+        "value": 0.9139444864742317
+      },
+      {
+        "date": "2026-07-07",
+        "value": 0.7733927094759652
+      },
+      {
+        "date": "2026-07-10",
+        "value": 0.757591071889146
+      },
+      {
+        "date": "2026-07-15",
+        "value": 0.664934106188205
+      },
+      {
+        "date": "2026-07-20",
+        "value": 0.6712503295710807
+      },
+      {
+        "date": "2026-07-23",
+        "value": 0.7443636468506598
+      },
+      {
+        "date": "2026-07-28",
+        "value": 0.7204167391174976
+      },
+      {
+        "date": "2026-07-31",
+        "value": 0.6879512069509078
+      },
+      {
+        "date": "2026-08-05",
+        "value": 0.7151436354740889
+      },
+      {
+        "date": "2026-08-10",
+        "value": 0.7313882155105315
+      },
+      {
+        "date": "2026-08-12",
+        "value": 0.7926587697770071
+      }
+    ]
+  },
+  "marketSignalInsights": [
+    {
+      "id": "HIGH_VOLATILITY",
+      "title": "Elevated Volatility",
+      "severity": "high",
+      "summary": "Annualized volatility 89.1% exceeds alert threshold."
+    },
+    {
+      "id": "DEEP_DRAWDOWN",
+      "title": "Deep Drawdown",
+      "severity": "high",
+      "summary": "Max drawdown 93.9% indicates material path risk."
+    },
+    {
+      "id": "HIGH_BETA",
+      "title": "High Market Sensitivity",
+      "severity": "medium",
+      "summary": "Portfolio beta proxy 3.38 amplifies market moves."
+    },
+    {
+      "id": "CRYPTO_HEAVY",
+      "title": "Crypto-Heavy Exposure",
+      "severity": "high",
+      "summary": "Crypto exposure 56.0% increases left-tail and gap-risk sensitivity."
+    },
+    {
+      "id": "SECTOR_CONCENTRATION",
+      "title": "Sector Concentration",
+      "severity": "medium",
+      "summary": "Sector 'crypto' aggregates to 56.0% of portfolio."
+    }
+  ],
+  "exposureBreakdown": {
+    "byAssetClass": [
+      {
+        "label": "Equities & ETFs",
+        "value": 0.34
+      },
+      {
+        "label": "Crypto",
+        "value": 0.56
+      },
+      {
+        "label": "Cash",
+        "value": 0.06
+      },
+      {
+        "label": "Other",
+        "value": 0.03999999999999987
+      }
+    ],
+    "holdings": [
+      {
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "assetClass": "Crypto",
+        "sector": "Crypto",
+        "weight": 0.22,
+        "weightLabel": "22.0%"
+      },
+      {
+        "symbol": "ETH",
+        "name": "Ethereum",
+        "assetClass": "Crypto",
+        "sector": "Crypto",
+        "weight": 0.16,
+        "weightLabel": "16.0%"
+      },
+      {
+        "symbol": "SOL",
+        "name": "Solana",
+        "assetClass": "Crypto",
+        "sector": "Crypto",
+        "weight": 0.1,
+        "weightLabel": "10.0%"
+      },
+      {
+        "symbol": "BITO",
+        "name": "Bitcoin Strategy ETF",
+        "assetClass": "ETF",
+        "sector": "Crypto",
+        "weight": 0.08,
+        "weightLabel": "8.0%"
+      },
+      {
+        "symbol": "QQQ",
+        "name": "Nasdaq-100 ETF",
+        "assetClass": "ETF",
+        "sector": "Technology",
+        "weight": 0.14,
+        "weightLabel": "14.0%"
+      },
+      {
+        "symbol": "SPY",
+        "name": "S&P 500 ETF",
+        "assetClass": "ETF",
+        "sector": "Broad Market",
+        "weight": 0.12,
+        "weightLabel": "12.0%"
+      },
+      {
+        "symbol": "GLD",
+        "name": "Gold Trust",
+        "assetClass": "Commodity",
+        "sector": "Precious Metals",
+        "weight": 0.07,
+        "weightLabel": "7.0%"
+      },
+      {
+        "symbol": "AGG",
+        "name": "US Aggregate Bond ETF",
+        "assetClass": "Bond",
+        "sector": "Fixed Income",
+        "weight": 0.05,
+        "weightLabel": "5.0%"
+      }
+    ]
+  },
+  "hedgeRecommendations": [
+    {
+      "title": "Increase Cash Buffer",
+      "instrument": "CASH",
+      "confidence": 0.8999999999999999,
+      "confidenceLabel": "90%",
+      "expectedEffect": "Lower equity exposure by ~10% and dampen drawdowns.",
+      "rationale": "Raise cash to reduce beta and absorb volatility while risk remains elevated.",
+      "triggers": [
+        "Deep Drawdown",
+        "High Market Sensitivity",
+        "Elevated Volatility"
+      ],
+      "narrative": "Recommend `increase_cash` via `CASH` because Raise cash to reduce beta and absorb volatility while risk remains elevated. Triggered by: DEEP_DRAWDOWN, HIGH_BETA, HIGH_VOLATILITY. Portfolio risk label is severe with vol=89.1% and max drawdown=93.9%."
+    },
+    {
+      "title": "Reduce Crypto Exposure",
+      "instrument": "BTC/ETH/SOL",
+      "confidence": 0.8,
+      "confidenceLabel": "80%",
+      "expectedEffect": "Lower crypto share and stabilize portfolio volatility.",
+      "rationale": "Elevated crypto weight increases gap risk and drawdown severity; trim digital assets and rotate into cash, bonds, or gold.",
+      "triggers": [
+        "Crypto-Heavy Exposure",
+        "Deep Drawdown",
+        "Elevated Volatility",
+        "Sector Concentration"
+      ],
+      "narrative": "Recommend `reduce_crypto_exposure` via `BTC/ETH/SOL` because Elevated crypto weight increases gap risk and drawdown severity; trim digital assets and rotate into cash, bonds, or gold. Triggered by: CRYPTO_HEAVY, DEEP_DRAWDOWN, HIGH_VOLATILITY, SECTOR_CONCENTRATION. Portfolio risk label is severe with vol=89.1% and max drawdown=93.9%."
+    },
+    {
+      "title": "Volatility-Target Rebalance",
+      "instrument": "PORTFOLIO",
+      "confidence": 0.74,
+      "confidenceLabel": "74%",
+      "expectedEffect": "Stabilize realized volatility near policy target.",
+      "rationale": "Scale risky sleeve toward a volatility target while blended vol regime is elevated.",
+      "triggers": [
+        "Elevated Volatility"
+      ],
+      "narrative": "Recommend `volatility_target_rebalance` via `PORTFOLIO` because Scale risky sleeve toward a volatility target while blended vol regime is elevated. Triggered by: HIGH_VOLATILITY. Portfolio risk label is severe with vol=89.1% and max drawdown=93.9%."
+    },
+    {
+      "title": "Add Stable Ballast",
+      "instrument": "CASH",
+      "confidence": 0.76,
+      "confidenceLabel": "76%",
+      "expectedEffect": "Improve liquidity buffer and reduce overnight crypto gap risk.",
+      "rationale": "Increase cash as a stable ballast while crypto and risk assets remain stressed.",
+      "triggers": [
+        "Crypto-Heavy Exposure",
+        "Elevated Volatility"
+      ],
+      "narrative": "Recommend `add_stable_ballast` via `CASH` because Increase cash as a stable ballast while crypto and risk assets remain stressed. Triggered by: CRYPTO_HEAVY, HIGH_VOLATILITY. Portfolio risk label is severe with vol=89.1% and max drawdown=93.9%."
+    },
+    {
+      "title": "Add Market Hedge",
+      "instrument": "SH",
+      "confidence": 0.72,
+      "confidenceLabel": "72%",
+      "expectedEffect": "Partial market-beta offset without liquidating core holdings.",
+      "rationale": "Simulated short-equity hedge (SH) offsets broad market beta during risk-off tapes.",
+      "triggers": [
+        "High Market Sensitivity"
+      ],
+      "narrative": "Recommend `add_inverse_etf_hedge` via `SH` because Simulated short-equity hedge (SH) offsets broad market beta during risk-off tapes. Triggered by: HIGH_BETA. Portfolio risk label is severe with vol=89.1% and max drawdown=93.9%."
+    }
+  ],
+  "scenarioSimulation": {
+    "label": "Crypto Stress",
+    "description": "Sharp digital-asset drawdown with elevated crypto volatility.",
+    "wealthSeries": [
+      {
+        "date": "2025-08-27",
+        "value": 0.9922320685733124
+      },
+      {
+        "date": "2025-09-01",
+        "value": 0.939855706903337
+      },
+      {
+        "date": "2025-09-04",
+        "value": 1.0168170737240985
+      },
+      {
+        "date": "2025-09-09",
+        "value": 1.029452101669362
+      },
+      {
+        "date": "2025-09-12",
+        "value": 0.9125500646560364
+      },
+      {
+        "date": "2025-09-17",
+        "value": 0.7757458187506128
+      },
+      {
+        "date": "2025-09-22",
+        "value": 0.6819472324852359
+      },
+      {
+        "date": "2025-09-25",
+        "value": 0.6909493421999076
+      },
+      {
+        "date": "2025-09-30",
+        "value": 0.7406975034169512
+      },
+      {
+        "date": "2025-10-03",
+        "value": 0.74827953533563
+      },
+      {
+        "date": "2025-10-08",
+        "value": 0.8242703869305731
+      },
+      {
+        "date": "2025-10-13",
+        "value": 0.8948983320913779
+      },
+      {
+        "date": "2025-10-16",
+        "value": 0.8817306645429727
+      },
+      {
+        "date": "2025-10-21",
+        "value": 1.0014165487489586
+      },
+      {
+        "date": "2025-10-24",
+        "value": 0.9618634194069949
+      },
+      {
+        "date": "2025-10-29",
+        "value": 0.9666200679307486
+      },
+      {
+        "date": "2025-11-03",
+        "value": 0.8270044575786295
+      },
+      {
+        "date": "2025-11-06",
+        "value": 0.7638492975564858
+      },
+      {
+        "date": "2025-11-11",
+        "value": 0.6981937265496737
+      },
+      {
+        "date": "2025-11-14",
+        "value": 0.7248078394917853
+      },
+      {
+        "date": "2025-11-19",
+        "value": 0.7111897174183918
+      },
+      {
+        "date": "2025-11-24",
+        "value": 0.5292056571039501
+      },
+      {
+        "date": "2025-11-27",
+        "value": 0.49781598354208534
+      },
+      {
+        "date": "2025-12-02",
+        "value": 0.5092402046322442
+      },
+      {
+        "date": "2025-12-05",
+        "value": 0.600052866668405
+      },
+      {
+        "date": "2025-12-10",
+        "value": 0.599175581987095
+      },
+      {
+        "date": "2025-12-15",
+        "value": 0.5989654173801269
+      },
+      {
+        "date": "2025-12-18",
+        "value": 0.5422897015567086
+      },
+      {
+        "date": "2025-12-23",
+        "value": 0.5228281052679362
+      },
+      {
+        "date": "2025-12-26",
+        "value": 0.44761893659128454
+      },
+      {
+        "date": "2025-12-31",
+        "value": 0.3871615892492467
+      },
+      {
+        "date": "2026-01-05",
+        "value": 0.40546446667512115
+      },
+      {
+        "date": "2026-01-08",
+        "value": 0.39589162670600997
+      },
+      {
+        "date": "2026-01-13",
+        "value": 0.382171215055476
+      },
+      {
+        "date": "2026-01-16",
+        "value": 0.3288016544722008
+      },
+      {
+        "date": "2026-01-21",
+        "value": 0.3308860194342496
+      },
+      {
+        "date": "2026-01-26",
+        "value": 0.3323914685085685
+      },
+      {
+        "date": "2026-01-29",
+        "value": 0.26830453575608343
+      },
+      {
+        "date": "2026-02-03",
+        "value": 0.26479232839035144
+      },
+      {
+        "date": "2026-02-06",
+        "value": 0.2476450870646014
+      },
+      {
+        "date": "2026-02-11",
+        "value": 0.2841301189777397
+      },
+      {
+        "date": "2026-02-16",
+        "value": 0.33869186320435546
+      },
+      {
+        "date": "2026-02-19",
+        "value": 0.34478232617610244
+      },
+      {
+        "date": "2026-02-24",
+        "value": 0.2795566200795588
+      },
+      {
+        "date": "2026-02-27",
+        "value": 0.2564226829287031
+      },
+      {
+        "date": "2026-03-04",
+        "value": 0.2567659204844358
+      },
+      {
+        "date": "2026-03-09",
+        "value": 0.24750639666152827
+      },
+      {
+        "date": "2026-03-12",
+        "value": 0.2408927201751141
+      },
+      {
+        "date": "2026-03-17",
+        "value": 0.22814196841281983
+      },
+      {
+        "date": "2026-03-20",
+        "value": 0.2067750084237265
+      },
+      {
+        "date": "2026-03-25",
+        "value": 0.21599777658700747
+      },
+      {
+        "date": "2026-03-30",
+        "value": 0.1674136041016652
+      },
+      {
+        "date": "2026-04-02",
+        "value": 0.18242939963561036
+      },
+      {
+        "date": "2026-04-07",
+        "value": 0.1821304008216411
+      },
+      {
+        "date": "2026-04-10",
+        "value": 0.17269566141549
+      },
+      {
+        "date": "2026-04-15",
+        "value": 0.15762646871834535
+      },
+      {
+        "date": "2026-04-20",
+        "value": 0.15088006304735
+      },
+      {
+        "date": "2026-04-23",
+        "value": 0.16341258919034418
+      },
+      {
+        "date": "2026-04-28",
+        "value": 0.15164428178674821
+      },
+      {
+        "date": "2026-05-01",
+        "value": 0.1740421235946143
+      },
+      {
+        "date": "2026-05-06",
+        "value": 0.15069762609253243
+      },
+      {
+        "date": "2026-05-11",
+        "value": 0.17314331280497786
+      },
+      {
+        "date": "2026-05-14",
+        "value": 0.18225167766431316
+      },
+      {
+        "date": "2026-05-19",
+        "value": 0.16230492681056677
+      },
+      {
+        "date": "2026-05-22",
+        "value": 0.15576936930632218
+      },
+      {
+        "date": "2026-05-27",
+        "value": 0.14743066640853827
+      },
+      {
+        "date": "2026-06-01",
+        "value": 0.13910704777592456
+      },
+      {
+        "date": "2026-06-04",
+        "value": 0.15871100239892633
+      },
+      {
+        "date": "2026-06-09",
+        "value": 0.14754988091461854
+      },
+      {
+        "date": "2026-06-12",
+        "value": 0.15236252907861506
+      },
+      {
+        "date": "2026-06-17",
+        "value": 0.13815007362393197
+      },
+      {
+        "date": "2026-06-22",
+        "value": 0.14590367941272014
+      },
+      {
+        "date": "2026-06-25",
+        "value": 0.13868210629145247
+      },
+      {
+        "date": "2026-06-30",
+        "value": 0.12537972860865118
+      },
+      {
+        "date": "2026-07-03",
+        "value": 0.11993507720656701
+      },
+      {
+        "date": "2026-07-08",
+        "value": 0.12028905258175993
+      },
+      {
+        "date": "2026-07-13",
+        "value": 0.11503572201359062
+      },
+      {
+        "date": "2026-07-16",
+        "value": 0.1100397770559034
+      },
+      {
+        "date": "2026-07-21",
+        "value": 0.11155080984361478
+      },
+      {
+        "date": "2026-07-24",
+        "value": 0.09591853832429219
+      },
+      {
+        "date": "2026-07-29",
+        "value": 0.09429693388934053
+      },
+      {
+        "date": "2026-08-03",
+        "value": 0.07814639893415874
+      },
+      {
+        "date": "2026-08-06",
+        "value": 0.06936500152153102
+      },
+      {
+        "date": "2026-08-11",
+        "value": 0.06535487123888335
+      },
+      {
+        "date": "2026-08-12",
+        "value": 0.06978537160047345
+      }
+    ],
+    "endingWealth": 0.06978537160047345
+  },
+  "disclaimer": "Simulated analysis for research and education. Not investment advice."
+}

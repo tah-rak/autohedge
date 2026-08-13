@@ -1,0 +1,38 @@
+name: Crypto Growth Mix
+description: Digital assets with equity ballast for crypto-forward risk analysis.
+version: "1.0"
+currency: USD
+cash_weight: 0.06
+holdings:
+  - symbol: BTC
+    asset_class: crypto
+    sector: crypto
+    weight: 0.22
+  - symbol: ETH
+    asset_class: crypto
+    sector: crypto
+    weight: 0.16
+  - symbol: SOL
+    asset_class: crypto
+    sector: crypto
+    weight: 0.10
+  - symbol: BITO
+    asset_class: etf
+    sector: crypto
+    weight: 0.08
+  - symbol: QQQ
+    asset_class: etf
+    sector: technology
+    weight: 0.14
+  - symbol: SPY
+    asset_class: etf
+    sector: broad_market
+    weight: 0.12
+  - symbol: GLD
+    asset_class: commodity
+    sector: precious_metals
+    weight: 0.07
+  - symbol: AGG
+    asset_class: bond
+    sector: fixed_income
+    weight: 0.05

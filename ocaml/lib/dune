@@ -1,0 +1,5 @@
+(library
+ (name autohedge_lib)
+ (public_name autohedge)
+ (libraries yojson)
+ (modules types portfolio market risk simulation json_io))

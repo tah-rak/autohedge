@@ -1,0 +1,38 @@
+name: Growth Tech Concentrated
+description: High-beta equity portfolio tilted toward US technology and growth.
+version: "1.0"
+currency: USD
+cash_weight: 0.05
+holdings:
+  - symbol: AAPL
+    asset_class: equity
+    sector: technology
+    weight: 0.18
+  - symbol: MSFT
+    asset_class: equity
+    sector: technology
+    weight: 0.16
+  - symbol: NVDA
+    asset_class: equity
+    sector: technology
+    weight: 0.14
+  - symbol: AMZN
+    asset_class: equity
+    sector: consumer
+    weight: 0.10
+  - symbol: GOOGL
+    asset_class: equity
+    sector: technology
+    weight: 0.10
+  - symbol: QQQ
+    asset_class: etf
+    sector: technology
+    weight: 0.12
+  - symbol: SPY
+    asset_class: etf
+    sector: broad_market
+    weight: 0.10
+  - symbol: TLT
+    asset_class: bond
+    sector: rates
+    weight: 0.05

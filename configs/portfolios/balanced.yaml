@@ -1,0 +1,42 @@
+name: Balanced Multi-Asset
+description: Diversified mix of equities, bonds, commodities, crypto, and cash.
+version: "1.1"
+currency: USD
+cash_weight: 0.06
+holdings:
+  - symbol: SPY
+    asset_class: etf
+    sector: broad_market
+    weight: 0.24
+  - symbol: EFA
+    asset_class: etf
+    sector: international
+    weight: 0.10
+  - symbol: EEM
+    asset_class: etf
+    sector: emerging
+    weight: 0.07
+  - symbol: AGG
+    asset_class: bond
+    sector: fixed_income
+    weight: 0.18
+  - symbol: TLT
+    asset_class: bond
+    sector: rates
+    weight: 0.07
+  - symbol: GLD
+    asset_class: commodity
+    sector: precious_metals
+    weight: 0.07
+  - symbol: VNQ
+    asset_class: etf
+    sector: real_estate
+    weight: 0.06
+  - symbol: BTC
+    asset_class: crypto
+    sector: crypto
+    weight: 0.08
+  - symbol: ETH
+    asset_class: crypto
+    sector: crypto
+    weight: 0.07

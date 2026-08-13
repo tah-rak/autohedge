@@ -1,0 +1,380 @@
+{
+  "generated_at": "2026-08-12T23:27:51.380667+00:00",
+  "portfolio": {
+    "name": "Growth Tech Concentrated",
+    "cash_weight": 0.05,
+    "holdings": [
+      {
+        "symbol": "AAPL",
+        "asset_class": "equity",
+        "sector": "technology",
+        "weight": 0.18
+      },
+      {
+        "symbol": "MSFT",
+        "asset_class": "equity",
+        "sector": "technology",
+        "weight": 0.16
+      },
+      {
+        "symbol": "NVDA",
+        "asset_class": "equity",
+        "sector": "technology",
+        "weight": 0.14
+      },
+      {
+        "symbol": "AMZN",
+        "asset_class": "equity",
+        "sector": "consumer",
+        "weight": 0.1
+      },
+      {
+        "symbol": "GOOGL",
+        "asset_class": "equity",
+        "sector": "technology",
+        "weight": 0.1
+      },
+      {
+        "symbol": "QQQ",
+        "asset_class": "etf",
+        "sector": "technology",
+        "weight": 0.12
+      },
+      {
+        "symbol": "SPY",
+        "asset_class": "etf",
+        "sector": "broad_market",
+        "weight": 0.1
+      },
+      {
+        "symbol": "TLT",
+        "asset_class": "bond",
+        "sector": "rates",
+        "weight": 0.05
+      }
+    ]
+  },
+  "scenario": "risk_off",
+  "seed": 42,
+  "metrics": {
+    "annualized_volatility": 0.3639117021351434,
+    "var_95": 0.0406302556622807,
+    "cvar_95": 0.05374336101594955,
+    "max_drawdown": 0.7079788413316821,
+    "sharpe_proxy": -3.1032528055350195,
+    "concentration_hhi": 0.12450000000000001,
+    "top_weight": 0.18,
+    "avg_correlation": 0.5501616818582805,
+    "equity_exposure": 0.9,
+    "beta_proxy": 1.1135822768590424,
+    "engine": "python"
+  },
+  "signals": [
+    {
+      "code": "HIGH_VOLATILITY",
+      "severity": "high",
+      "message": "Annualized volatility 36.4% exceeds alert threshold.",
+      "evidence": {
+        "annualized_volatility": 0.3639117021351434,
+        "threshold": 0.25
+      }
+    },
+    {
+      "code": "DEEP_DRAWDOWN",
+      "severity": "high",
+      "message": "Max drawdown 70.8% indicates material path risk.",
+      "evidence": {
+        "max_drawdown": 0.7079788413316821,
+        "threshold": 0.12
+      }
+    },
+    {
+      "code": "EQUITY_HEAVY",
+      "severity": "medium",
+      "message": "Equity/ETF exposure 90.0% leaves limited defensive ballast.",
+      "evidence": {
+        "equity_exposure": 0.9
+      }
+    },
+    {
+      "code": "SECTOR_CONCENTRATION",
+      "severity": "medium",
+      "message": "Sector 'technology' aggregates to 70.0% of portfolio.",
+      "evidence": {
+        "sector": "technology",
+        "weight": 0.7
+      }
+    }
+  ],
+  "volatility": {
+    "ewma_vol": 0.3263360461875427,
+    "ml_vol": 0.06356708590150777,
+    "blended_vol": 0.19495156604452524,
+    "vol_regime": "normal",
+    "method": "ewma+gbr"
+  },
+  "risk_score": {
+    "risk_label": "high",
+    "risk_score": 0.6666666666666666,
+    "proba": {
+      "high": 0.91,
+      "low": 0.0,
+      "moderate": 0.09
+    },
+    "features": {
+      "ann_vol": 0.3639117021351434,
+      "ewma_vol": 0.31943053924649484,
+      "vol_of_vol": 0.05669970081793098,
+      "max_drawdown_60": 0.3615713379220717,
+      "avg_corr": 0.5501616818582805,
+      "top_weight": 0.18,
+      "equity_exposure": 0.9,
+      "hhi": 0.12450000000000001,
+      "downside_dev": 0.22014688851829348,
+      "skew": 0.09481136690688759,
+      "kurtosis": 0.2509783131131007,
+      "beta_proxy": 1.1135822768590424
+    },
+    "method": "random_forest+rules",
+    "rule_label": "high"
+  },
+  "recommendations": [
+    {
+      "action": "increase_cash",
+      "instrument": "CASH",
+      "rationale": "Raise cash to reduce beta and absorb volatility while risk remains elevated.",
+      "trigger_signals": [
+        "DEEP_DRAWDOWN",
+        "EQUITY_HEAVY",
+        "HIGH_VOLATILITY"
+      ],
+      "expected_effect": "Lower equity exposure by ~5% and dampen drawdowns.",
+      "confidence": 0.7999999999999999,
+      "priority": 1,
+      "details": {
+        "suggested_cash_increase": 0.05
+      }
+    },
+    {
+      "action": "trim_sector_and_rebalance",
+      "instrument": "QQQ/AAPL/MSFT/NVDA",
+      "rationale": "Technology concentration amplifies idiosyncratic and factor drawdowns; trim winners and rotate toward broad market / defensives.",
+      "trigger_signals": [
+        "SECTOR_CONCENTRATION"
+      ],
+      "expected_effect": "Reduce single-factor vulnerability and lower portfolio HHI.",
+      "confidence": 0.78,
+      "priority": 2,
+      "details": {
+        "technology_weight": 0.7,
+        "rebalance_toward": [
+          "SPY",
+          "XLU",
+          "AGG"
+        ],
+        "trim_fraction": 0.15
+      }
+    },
+    {
+      "action": "add_inverse_etf_hedge",
+      "instrument": "SH",
+      "rationale": "Simulated short-equity hedge (SH) offsets broad market beta during risk-off tapes.",
+      "trigger_signals": [
+        "EQUITY_HEAVY"
+      ],
+      "expected_effect": "Partial market-beta offset without liquidating core holdings.",
+      "confidence": 0.72,
+      "priority": 2,
+      "details": {
+        "suggested_weight": 0.05,
+        "hedge_type": "inverse_etf"
+      }
+    },
+    {
+      "action": "add_duration_ballast",
+      "instrument": "AGG",
+      "rationale": "Bond allocation provides ballast when equity beta dominates risk.",
+      "trigger_signals": [
+        "EQUITY_HEAVY"
+      ],
+      "expected_effect": "Lower equity share and soften left-tail outcomes.",
+      "confidence": 0.68,
+      "priority": 3,
+      "details": {
+        "suggested_weight": 0.08
+      }
+    },
+    {
+      "action": "simulate_put_overlay",
+      "instrument": "SPY_PUT_OVERLAY",
+      "rationale": "A simulated protective-put overlay caps left-tail loss if the market continues to sell off (options-style hedge for analysis only).",
+      "trigger_signals": [
+        "DEEP_DRAWDOWN",
+        "HIGH_VOLATILITY"
+      ],
+      "expected_effect": "Bound downside beyond strike in exchange for premium drag.",
+      "confidence": 0.66,
+      "priority": 4,
+      "details": {
+        "hedge_type": "options_style_simulated",
+        "notional_fraction": 0.5,
+        "approx_premium_drag_annual": 0.02
+      }
+    }
+  ],
+  "explanations": [
+    {
+      "action": "increase_cash",
+      "instrument": "CASH",
+      "confidence": 0.7999999999999999,
+      "expected_effect": "Lower equity exposure by ~5% and dampen drawdowns.",
+      "trigger_details": [
+        {
+          "code": "DEEP_DRAWDOWN",
+          "severity": "high",
+          "message": "Max drawdown 70.8% indicates material path risk.",
+          "evidence": {
+            "max_drawdown": 0.7079788413316821,
+            "threshold": 0.12
+          }
+        },
+        {
+          "code": "EQUITY_HEAVY",
+          "severity": "medium",
+          "message": "Equity/ETF exposure 90.0% leaves limited defensive ballast.",
+          "evidence": {
+            "equity_exposure": 0.9
+          }
+        },
+        {
+          "code": "HIGH_VOLATILITY",
+          "severity": "high",
+          "message": "Annualized volatility 36.4% exceeds alert threshold.",
+          "evidence": {
+            "annualized_volatility": 0.3639117021351434,
+            "threshold": 0.25
+          }
+        }
+      ],
+      "narrative": "Recommend `increase_cash` via `CASH` because Raise cash to reduce beta and absorb volatility while risk remains elevated. Triggered by: DEEP_DRAWDOWN, EQUITY_HEAVY, HIGH_VOLATILITY. Portfolio risk label is high with vol=36.4% and max drawdown=70.8%."
+    },
+    {
+      "action": "trim_sector_and_rebalance",
+      "instrument": "QQQ/AAPL/MSFT/NVDA",
+      "confidence": 0.78,
+      "expected_effect": "Reduce single-factor vulnerability and lower portfolio HHI.",
+      "trigger_details": [
+        {
+          "code": "SECTOR_CONCENTRATION",
+          "severity": "medium",
+          "message": "Sector 'technology' aggregates to 70.0% of portfolio.",
+          "evidence": {
+            "sector": "technology",
+            "weight": 0.7
+          }
+        }
+      ],
+      "narrative": "Recommend `trim_sector_and_rebalance` via `QQQ/AAPL/MSFT/NVDA` because Technology concentration amplifies idiosyncratic and factor drawdowns; trim winners and rotate toward broad market / defensives. Triggered by: SECTOR_CONCENTRATION. Portfolio risk label is high with vol=36.4% and max drawdown=70.8%."
+    },
+    {
+      "action": "add_inverse_etf_hedge",
+      "instrument": "SH",
+      "confidence": 0.72,
+      "expected_effect": "Partial market-beta offset without liquidating core holdings.",
+      "trigger_details": [
+        {
+          "code": "EQUITY_HEAVY",
+          "severity": "medium",
+          "message": "Equity/ETF exposure 90.0% leaves limited defensive ballast.",
+          "evidence": {
+            "equity_exposure": 0.9
+          }
+        }
+      ],
+      "narrative": "Recommend `add_inverse_etf_hedge` via `SH` because Simulated short-equity hedge (SH) offsets broad market beta during risk-off tapes. Triggered by: EQUITY_HEAVY. Portfolio risk label is high with vol=36.4% and max drawdown=70.8%."
+    },
+    {
+      "action": "add_duration_ballast",
+      "instrument": "AGG",
+      "confidence": 0.68,
+      "expected_effect": "Lower equity share and soften left-tail outcomes.",
+      "trigger_details": [
+        {
+          "code": "EQUITY_HEAVY",
+          "severity": "medium",
+          "message": "Equity/ETF exposure 90.0% leaves limited defensive ballast.",
+          "evidence": {
+            "equity_exposure": 0.9
+          }
+        }
+      ],
+      "narrative": "Recommend `add_duration_ballast` via `AGG` because Bond allocation provides ballast when equity beta dominates risk. Triggered by: EQUITY_HEAVY. Portfolio risk label is high with vol=36.4% and max drawdown=70.8%."
+    },
+    {
+      "action": "simulate_put_overlay",
+      "instrument": "SPY_PUT_OVERLAY",
+      "confidence": 0.66,
+      "expected_effect": "Bound downside beyond strike in exchange for premium drag.",
+      "trigger_details": [
+        {
+          "code": "DEEP_DRAWDOWN",
+          "severity": "high",
+          "message": "Max drawdown 70.8% indicates material path risk.",
+          "evidence": {
+            "max_drawdown": 0.7079788413316821,
+            "threshold": 0.12
+          }
+        },
+        {
+          "code": "HIGH_VOLATILITY",
+          "severity": "high",
+          "message": "Annualized volatility 36.4% exceeds alert threshold.",
+          "evidence": {
+            "annualized_volatility": 0.3639117021351434,
+            "threshold": 0.25
+          }
+        }
+      ],
+      "narrative": "Recommend `simulate_put_overlay` via `SPY_PUT_OVERLAY` because A simulated protective-put overlay caps left-tail loss if the market continues to sell off (options-style hedge for analysis only). Triggered by: DEEP_DRAWDOWN, HIGH_VOLATILITY. Portfolio risk label is high with vol=36.4% and max drawdown=70.8%."
+    }
+  ],
+  "agent_transcript": [
+    {
+      "agent": "market_sensor",
+      "role": "observation",
+      "content": "Scenario=risk_off. Blended vol=19.5% (normal). 21d portfolio drift~=-245.7%, market drift~=-140.4%, down-day share=67%."
+    },
+    {
+      "agent": "risk_analyst",
+      "role": "analysis",
+      "content": "Risk label=high (score=0.67, method=random_forest+rules). Vol=36.4%, VaR95=4.06%, MDD=70.8%, beta=1.11, HHI=0.125. Active signals=4."
+    },
+    {
+      "agent": "hedge_strategist",
+      "role": "recommendation",
+      "content": "Generated 5 hedge recommendation(s) from 4 signal code(s)."
+    },
+    {
+      "agent": "explainer",
+      "role": "explanation",
+      "content": "Built transparent explanations for 5 recommendation(s)."
+    }
+  ],
+  "series": {
+    "portfolio_returns_tail": [
+      -0.017592,
+      -0.02742,
+      -0.042122,
+      -0.004169,
+      -0.006234,
+      -0.027823,
+      -0.019031,
+      0.011543,
+      -0.012716,
+      0.022792
+    ],
+    "wealth_start": 0.9998021144289903,
+    "wealth_end": 0.3092406978092402,
+    "total_return": -0.6906980958068342
+  }
+}

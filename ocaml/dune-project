@@ -1,0 +1,15 @@
+(lang dune 3.14)
+(name autohedge)
+(version 1.0.0)
+(generate_opam_files true)
+
+(package
+ (name autohedge)
+ (synopsis "AutoHedge OCaml risk and portfolio metrics engine")
+ (description
+  "Computes portfolio risk metrics (volatility, VaR, drawdown, correlations) for AutoHedge.")
+ (depends
+  (ocaml (>= 4.14))
+  (dune (>= 3.0))
+  yojson
+  cmdliner))
