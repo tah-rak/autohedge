@@ -57,7 +57,7 @@ autohedge/
 
 ---
 
-## Setup (beginner-friendly)
+## Setup 
 
 ### Prerequisites
 
