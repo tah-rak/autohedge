@@ -179,7 +179,6 @@ outputs/<portfolio>_<scenario>/
 3. **Factor Exposures** — OLS factor betas where **Crypto is a systematic risk factor**, not only an asset sleeve
 4. **Agent workflow** — market signals → risk analysis → hedge strategy → recommendation rationale
 
-No paid LLM API is required.
 
 ---
 
